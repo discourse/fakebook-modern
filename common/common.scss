@@ -464,8 +464,16 @@ body {
   font-weight: 500;
 }
 
-#list-area .show-more.has-topics .alert {
-  width: 457px;
+#list-area .show-more.has-topics {
+  top: 0;
+  .alert {
+    width: unset;
+    @include drop-shadow();
+  }
+}
+
+.loading-container {
+  display: hidden;
 }
 
 // Header
