@@ -28,6 +28,8 @@ $border-radius: 8;
   margin-bottom: 10px;
 }
 
+.show-more.has-topics
+
 #main-outlet {
   display: flex;
   flex-flow: row wrap;
@@ -464,8 +466,12 @@ body {
   font-weight: 500;
 }
 
-#list-area .show-more.has-topics .alert {
-  width: 457px;
+#list-area .show-more.has-topics {
+  top: 0;
+  .alert {
+    width: unset;
+    @include drop-shadow();
+  }
 }
 
 // Header
