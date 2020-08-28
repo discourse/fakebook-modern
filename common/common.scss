@@ -1130,7 +1130,6 @@ body:not(.categories-list) .topic-list {
 
   .main-link {
     @include background-and-drop-shadow();
-    @include drop-shadow();
     border-radius: #{$border-radius}px;
     margin-bottom: 12px;
 

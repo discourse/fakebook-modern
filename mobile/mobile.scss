@@ -28,6 +28,15 @@ body:not(.categories-list) .topic-list {
   }
 }
 
+.search-container {
+  width: calc(100vw - 2em);
+  margin: 0 auto;
+}
+
+.regular .container.posts {
+  width: 100%;
+}
+
 .navigation-container {
   justify-content: space-between;
   align-content: center;
