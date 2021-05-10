@@ -526,6 +526,9 @@ body {
 .d-header-icons .icon img.avatar {
   width: 2.75em;
   height: 2.75em;
+  &:hover {
+    filter: brightness(0.9);
+  }
 }
 
 .user-menu .notifications li:hover,
@@ -1306,4 +1309,8 @@ section.tag-info {
   border-color: $border-color;
   border-radius: #{$border-radius}px;
   background: var(--secondary, $secondary);
+}
+
+.discourse-no-touch .d-header-icons .icon:hover, .discourse-no-touch .d-header-icons .icon:focus {
+  background-color: transparent;
 }
