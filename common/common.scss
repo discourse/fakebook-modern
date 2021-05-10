@@ -8,6 +8,10 @@ html {
 
 $border-radius: 8;
 
+.category-breadcrumb>li {
+  height: unset;
+}
+
 @mixin drop-shadow() {
   box-shadow: 0 1px 2px rgba(var(--always-black-rgb), .2);
 }
@@ -221,6 +225,7 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
       & > li > a {
         padding: 0.75em 0.714em;
         margin: 0 0 .25em 0;
+        width: 100%;
       }
     }
 
@@ -257,6 +262,10 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
           margin: 0.5em 0 0 0;
         }
       }
+    }
+
+    .navigation-controls {
+      width: 100%;
     }
 
     .select-kit .select-kit-header .caret-icon {
