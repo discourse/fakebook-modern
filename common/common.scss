@@ -253,7 +253,7 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
       display: flex;
       flex-wrap: wrap;
       flex: 1 1 auto;
-      margin: 0;
+      margin: 0 0 var(--nav-space) 0;
       li.category-drop,
       li.tag-drop {
         margin: 0;
@@ -1144,6 +1144,7 @@ body:not(.categories-list) .topic-list {
     @include background-and-drop-shadow();
     border-radius: #{$border-radius}px;
     margin-bottom: 12px;
+    flex-grow: 1;
 
     .byline {
       display: flex;
